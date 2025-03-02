@@ -1,2 +1,1 @@
-# Encryption-Algorithms-Webpage
-Small Web Page about Encryption Algorithms.
+### Εργασία μαθήματος Διδακτική της Πληροφορικής
