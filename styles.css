@@ -1,0 +1,133 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+header ul li {
+    padding-right: 2rem;
+}
+
+a:hover {
+    cursor: pointer;
+    color: pink;
+}
+section {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    padding: 1rem 0;
+    color: #34495e;
+}
+a {
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    color: black;
+}
+
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#controls {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 0.5em;
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+    display: block;
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+button {
+    margin-top: 1em;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+p {
+    display: none;
+    background-color: #ecf0f1;
+    padding: 1em;
+    border-radius: 4px;
+    border: 1px solid #bdc3c7;
+    margin-top: 1em;
+}
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+select, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}

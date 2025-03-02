@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Μαθησιακό Αντικείμενο: Αλγόριθμοι Κρυπτογράφησης</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Αλγόριθμοι Κρυπτογράφησης</h1>
+        <ul>
+            <li><a href="#theory">Θεωρία</a></li>
+            <li><a href="#controls">Δραστηριότητες</a></li>
+            <li><a href="#video">Βίντεο</a></li>
+            <li><a href="mysource">Πηγές</a></li>
+        </ul>
+    </header>
+    <main>
+       
+        <section id="theory">
+            <h2>Θεωρία </h2>
+            <h3>Η κρυπτογράφηση είναι η διαδικασία μετατροπής πληροφορίας ή δεδομένων σε κωδικοποιημένη μορφή, έτσι ώστε μόνο οι εξουσιοδοτημένοι να μπορούν να την αποκωδικοποιήσουν και να κατανοήσουν το περιεχόμενο.</h3>
+            <h3>Η διαδικασία κρυπτογράφησης περιλαμβάνει την μετατροπή του απλού κειμένου (plaintext) σε κρυπτοκείμενο (ciphertext) μέσω ενός αλγορίθμου και ενός κλειδιού κρυπτογράφησης. Το κλειδί είναι μια σειρά δυαδικών ψηφίων που χρησιμοποιούνται για την κρυπτογράφηση και αποκρυπτογράφηση των δεδομένων. Τα κλειδιά κρυπτογράφησης μπορούν να έχουν διάφορα μήκη. Για παράδειγμα, το AES-128 χρησιμοποιεί κλειδιά 128 bits, ενώ το AES-256 χρησιμοποιεί κλειδιά 256 bits, προσφέροντας μεγαλύτερη ασφάλεια αλλά απαιτώντας περισσότερους υπολογιστικούς πόρους.</h3>
+        </section>
+      <img src="overview.png" alt="overview">
+        <section id="controls">
+            
+
+            <h2>Caesar Cipher</h2>
+            <label for="caesarInput">Κείμενο:</label>
+            <input type="text" id="caesarInput" placeholder="Εισάγετε το κείμενο...">
+            <label for="caesarShift">Μετατόπιση:</label>
+            <input type="number" id="caesarShift" value="3">
+            <button onclick="caesarCipher()">Κρυπτογράφηση</button>
+            <p id="caesarOutput"></p>
+
+            <h2>Vigenère Cipher</h2>
+            <label for="vigenereInput">Κείμενο:</label>
+            <input type="text" id="vigenereInput" placeholder="Εισάγετε το κείμενο...">
+            <label for="vigenereKey">Κλειδί:</label>
+            <input type="text" id="vigenereKey" placeholder="Εισάγετε το κλειδί...">
+            <button onclick="vigenereCipher()">Κρυπτογράφηση</button>
+            <p id="vigenereOutput"></p>
+
+
+            <div class="container">
+                <h1>Παιχνίδι Κρυπτογράφησης</h1>
+                <textarea id="inputMessage" placeholder="Εισάγετε το μήνυμα εδώ για Κρυπτογράφηση..."></textarea>
+                <select id="algorithm">
+                    <option value="aes">AES</option>
+                    <option value="rsa">RSA</option>
+                    <option value="des">DES</option>
+                    <option value="blowfish">Blowfish</option>
+                </select>
+                <button onclick="encryptMessage()">Κρυπτογράφηση</button>
+                <button onclick="decryptMessage()">Αποκρυπτογράφηση</button>
+                <textarea id="outputMessage" placeholder="Εισάγετε το μήνυμα εδώ για Αποκρυπτογράφηση..."></textarea>
+            </div>
+        </section>
+
+         <section id="video">
+        <video width="500" height="350" controls>
+            <source src="Comparison of Encryption Algorithms.mp4" type="video/mp4">
+          
+            </video>
+            </section>
+          
+        <section id="mysource">
+          <h2>Πηγές</h2>
+          <h3><a href="https://www.websiterating.com/el/blog/cloud-storage/what-is-aes-256-encryption/">Website Rating</a></h3>
+          <h3><a href="https://homodigitalis.gr/posts/4305/">Homo Digitalis</a></h3>
+          <h3><a href="https://www.youtube.com/watch?v=fJHw2WNLlaQ&t=1s">Udacity</a></h3>
+
+
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
